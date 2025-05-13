@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -53,6 +54,46 @@
             padding-inline: 20px;
             padding-block: 10px;
         }
+        #bar{
+            display: none;
+        }
+        @media only screen and (max-width: 1200px) {
+            #hero-section{
+                padding-inline: 10%;
+            }
+            #hero-section img{
+                width: 300px;
+            }
+            #hero-section h1{
+                font-size: 50px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            nav ul{
+                display:none;
+            }
+            nav #bar{
+                display: block;
+            }
+            #hero-section{
+                display: block;
+                padding-inline: 10%;
+                padding-block: 50px;
+            }
+            #hero-section h1{
+                font-size: 40px;
+            }
+            #hero-section img{
+                width: 80%;
+            }
+        @media only screen and (max-width: 600px){
+            *{
+                font-size: 16px;
+            }
+            #hero-section h1 {
+                font-size: 30px;
+            }
+        }
         #hero-section a {
             padding-inline: 20px;
         }
@@ -60,6 +101,7 @@
 </head>
 <body>
     <nav>
+        <i id="bar" class="fa-solid fa-bars"></i>
         <ul>
             <li>Home</li>
             <li>About</li>
@@ -79,7 +121,7 @@
     <div id="hero-section">
         <img src="https://i.pinimg.com/736x/15/65/bb/1565bb121e6d05225ee083f0096bf738.jpg" alt = " " >
         <div>
-            <h1>Turning Vision Into <br> Reality With Code <br> And Design</h1>
+            <h1>Turning Vision Into Reality With Code And Design</h1>
             <p>As a skiled full stack developer, I am dedicated to turning ideas into
                 Innovative web applcations. Explore my latest projects and artices
                 showcasing my expertise in Anact js and amb develsoment.</p>
